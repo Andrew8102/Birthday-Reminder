@@ -14,7 +14,7 @@ main函数
 *********************/
 
 function main() {
-    send2wx("ceshi", "12312321321")
+    
     for (let item of DATA.birthday) {
         let name = item.name;
         let birth = item.birth;
@@ -23,6 +23,7 @@ function main() {
         let x = new Date(solar);
         if ((x - current_time) < 0) {
             continue;
+            send2wx("生日提醒", "最近没人过生日")
         }
         else if (((x - current_time) / 86400000) < 4) {
             let days = Math.ceil((x - current_time) / 86400000);
