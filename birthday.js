@@ -14,6 +14,7 @@ main函数
 *********************/
 
 function main() {
+    send2wx("ceshi", "12312321321")
     for (let item of DATA.birthday) {
         let name = item.name;
         let birth = item.birth;
