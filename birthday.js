@@ -45,7 +45,7 @@ function send2wx(text, desp = '') {
     return new Promise(resolve => {
         //let str =encodeURIComponent(message);
         const options = {
-            url: `https://sc.ftqq.com/${SCKEY}.send`,
+            url: `https://sctapi.ftqq.com/${SCKEY}.send`,
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
             },
